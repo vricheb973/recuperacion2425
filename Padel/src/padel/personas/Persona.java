@@ -9,7 +9,7 @@ public abstract class Persona {
 	public Persona(String nombre, String apellidos, String dni) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
-		this.dni = dni;
+		setDni(dni);
 	}	
 	
 	public String getNombre() {
@@ -52,10 +52,10 @@ public abstract class Persona {
 		return this.dni.equals(other.dni);
 	}
 	
-	public void saludar() {
-		System.out.println("Hola, mi nombre es" + this.nombre + " y soy " + this.getClass());
-	}
+//	public void saludar() {
+//		System.out.println("Hola, mi nombre es" + this.nombre + " y soy " + this.getClass());
+//	}
 	
-//	public abstract void saludar();
+	public abstract void saludar();
 
 }

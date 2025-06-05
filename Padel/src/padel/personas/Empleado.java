@@ -8,14 +8,6 @@ public class Empleado extends Persona {
 		super(nombre, apellidos, dni);
 		this.codEmpleado = codEmpleado;
 	}
-	
-	public int getCodEmpleado() {
-		return codEmpleado;
-	}
-
-	public void setCodEmpleado(int codEmpleado) {
-		this.codEmpleado = codEmpleado;
-	}
 
 	@Override
 	public String toString() {
@@ -23,9 +15,9 @@ public class Empleado extends Persona {
 				", dni=" + this.getDni() + ", codEmpleado=" + this.codEmpleado + "]"; 
 	}
 
-//	@Override
-//	public void saludar() {
-//		System.out.println("Hola, mi nombre es " + this.getNombre() + " y soy un empleado ");
-//	}
+	@Override
+	public void saludar() {
+		System.out.println("Hola, mi nombre es " + this.getNombre() + " y soy un empleado ");
+	}
 
 }

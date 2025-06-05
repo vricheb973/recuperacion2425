@@ -1,6 +1,6 @@
 package padel.personas;
 
-public class Jugador extends Persona {
+public abstract class Jugador extends Persona {
 	
 	private int codSocio;
 
@@ -30,7 +30,5 @@ public class Jugador extends Persona {
 		Jugador other = (Jugador) obj;			
 		return super.equals(other) && this.codSocio == other.codSocio;
 	}
-	
-	
 
 }
