@@ -1,6 +1,6 @@
 package padel.personas;
 
-public abstract class Persona {
+public abstract class Persona implements Comparable<Persona> {
 	
 	private String nombre;
 	private String apellidos;
@@ -50,6 +50,17 @@ public abstract class Persona {
 		
 		Persona other = (Persona) obj;			
 		return this.dni.equals(other.dni);
+	}
+
+	@Override
+	public int compareTo(Persona o) {
+		int result = this.nombre.compareTo(o.nombre);
+		
+		if(result == 0) {
+			result = this.dni.compareTo(o.dni);
+		}
+
+		return result;
 	}
 	
 //	public void saludar() {

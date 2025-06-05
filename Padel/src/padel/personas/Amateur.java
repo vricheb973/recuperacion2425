@@ -12,7 +12,7 @@ public class Amateur extends Jugador {
 	@Override
 	public String toString() {
 		return String.format("Amateur[nombre=%s, apellidos=%s, "
-				+ "dni=%s, cod=%d, puntoDebil=%s]", this.getNombre(), this.getApellidos()
+				+ "dni=%s, cod=%d, puntoDebil=%s] \n", this.getNombre(), this.getApellidos()
 				, this.getDni(), this.getCodSocio(), this.puntoDebil);
 	}
 
